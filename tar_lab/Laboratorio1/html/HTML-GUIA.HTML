@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="es" >
+
+<head>
+<meta charset=UTF-8 />
+<title>Mi primer laboratorio de JS </title>
+<link rel="stylesheet" href="../css/estilo.css" />
+
+</head>
+
+<body>
+  <div id="fondo">
+     <div id="header">
+    	</div>
+  	<div id="content-fondo">
+   	<div id="subtitulo">
+     		<h2 id="nombre">Desde que se carga la p&aacute;gina...Cambiame por Laboratorio de Javascript...</h2>
+			<h2 id="CFP">Cada 10 segundos debo cambiar por: Uso Javascript externo al HTML/Implemento funciones manejadoras de eventos/Uso manejadores de eventos sem&aacute;nticos/Uso el m&eacute;todo del objeto document: getElementById/Obtengo valores de diferentes campos de formularios/Manipulo el contenido de diferentes campos de formulario/Manipulo el estilo del contenido de la página .</h2>
+
+   	 <div id="contenido"> 
+        <h2>Te mostrar&eacute; un formulario si haces clic <em id = "formulario">aqu&iacute;</em></h2>
+        <form action="#" id="form" >
+		<h2>Formulario</h2>
+		<label class="label"id="ced">C&eacute;dula:</label> <input type="text"  required />  <br/>
+		<label class="label"> D&iacute;as de la semana que tienes clases de tecnologi&oacute;a web II:</label><br/>
+		<input type="checkbox" id = "20" value="1"/> <label>Lunes</label> <br/>
+		<input type="checkbox" id = "21" value="1"/>  <label>Martes</label> <br/>
+		<input type="checkbox" id = "22" value="0"/>  <label >Mi&eacute;rcoles</label> <br/>
+		<input type="checkbox" id = "23" value="0"/>  <label >Jueves</label> 	<br/>
+		<input type="checkbox" id = "24" value="0"/>  <label >Viernes</label> 	<br/>
+		<label class="label"> Turno en que se desarrolla la clase:</label><br/>
+		<input type="radio" id = "25" name = "turno" value="0"/>  <label >Nocturno</label> <br/>
+		<input type="radio" id = "26" name = "turno" value="1"/>  <label>Diurno</label> <br/>
+		<label class="label"> Carrera que estudias:</label>
+		<select id="carrera" name="carrera">
+		<option value="0">Selecciona</option>
+		<option value="1">LIGEE</option>
+		<option value="0">LII</option>
+		<option value="0">TIE</option>
+		</select>
+		  </br></br><input id="submit" name="dsubmit" type="submit" value="Enviar"></form>
+	
+     </div><!--fin del contenido-->
+
+    </div><!--fin subtitulo-->
+        
+		<div id="menu_lateral">
+		
+		<div id="foto">
+		       <h2 id="TFoto">Si haces clic sobre la imagen, disminuye su tama&ntilde;o</h2>
+         	   <img id="fotos" src="../img/Lab01.jpg" alt="" width="100%" heigth="100"/>
+	        </div>
+                <h2>Activanos al dar clic en el botón enviar (de la encuesta) y programanos para...</h2>
+				<form action="#" method="post">
+				  <input type="button" id="0" value="Mostrar puntos obtenidos" />  
+				  <input type="button" id="1" value="Colocar resp. correctas"/ >
+                </form>
+
+         </div><!--fin del menu_lateral-->
+    </div><!--fin content-fondo-->
+
+  <div id="abajo">
+    <p><strong id="pie"> Aquí va tu nombre desde que se carga la p&aacute;gina</strong> </p>
+  </div><!--fin del footer-->
+</div><!--fin del fondo-->
+</body>
+</html>

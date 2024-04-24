@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TAREA 2</title>
+	<script src="../js/Laboratorio2DOM19.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css" type="text/css" />
+</head>
+<body>
+    <div id="fondo">
+        <div id="header"></div>
+        <div id="content-fondo">
+            <div id="subtitulo">
+                <!-- Añadimos identificadores a cada elemento para acceder a ellos desde JavaScript -->
+                <p><strong id="Requisitos">Requisitos</strong><strong id="PerfilEgreso">Perfil de Egreso</strong><strong id="PlanEstudios">Plan de Estudios</strong><strong id="MisDatos">Mis Datos</strong></p>
+            </div>
+            <div id="contenido"></div>
+        </div>
+        <div id="abajo">
+
+            <form name="Datos" action="Datos.php" method="post">
+                <label><em>&nbsp;Nombre: </em></label>
+                <input type="text" id="Nombre" name="Nombre" value="Nelson De Gracia" size="14" readonly>
+                &nbsp;&nbsp;&nbsp;<label>Sexo: </label>
+                &nbsp;<input type="radio" id="Femenino" name="Radio" value="Femenino"> <label for="Femenino">Fem. </label>
+                &nbsp;<input type="radio" id="Masculino" name="Radio" value="Masculino" checked> <label for="Masculino">Masc. </label>
+                <label id="selec">.&nbsp;&nbsp;Carrera:
+                <select id="opciones" name="opciones">
+                    <option value="" selected="selected">- selecciona -</option>
+                    <option id="" value="TIE">TIE</option>
+                    <option id="" value="LIGEE" selected>LIGEE</option>
+                    <option id="" value="LII">LII</option>
+                    <option id="" value="Otra">Otra</option>
+                </select>
+                &nbsp;&nbsp;<label id="selec"> Materias:    </label>
+                <input type="checkbox" id="materia1" name="materia1" value="" > <label for="materia1">INF 216</label>
+                <input type="checkbox" id="materia2" name="materia2" value="" checked> <label for="materia2">INF 314</label>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Laboratorio eventos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript" src="../js/JS_04.js"></script>
+<link rel="stylesheet" href="../css/estilo.css" type="text/css" />
+</head>
+<body>
+  <div id="fondo">
+     <div id="header">
+        </div>
+    <div id="content-fondo">
+    <div id="subtitulo">
+		<h2>&#191;Sab&iacute;as que la UP est&aacute; en proceso de acreditaci&oacute;n&#63; &#191;Sabes qu&eacute; significa la acreditaci&oacute;n de la instituci&oacute;n universitaria&#63;</h2>
+
+		<div id="contenido">
+			   <h2>Debes saber que en el CRUV hay ...</h2>
+			   <p>Un consultorio jur&iacute;dico que ofrece asesor&iacuteas legales a la comunidad y a la familia universitaria con tarifas muy econ&oacute;micas.</p>
+		   <p>Una cl&iacute;nica de odontolog&iacute;a que atiende a los estudiantes y profesores con precios accesibles.</p>
+		   <p>Que tenemos una base virtual de bibliograf&iacute;a cient&iacute;fica actualizada en nuestra biblioteca del CRUV, sin costo para los estudiantes. All&iacute; hay libros electr&oacute;nicos actualizados y tambi&eacute;n se dictan talleres a los estudiantes interesados en aprender a utilizarla.</p>
+		   <p>Que existen beneficios o subsidios como apoyo econ&oacute;mico en la dieta, becas de estudios, trabajo en el proceso de matr&iacute;cula a cambio de la exoneraci&oacute;n del pago de matr&iacute;cula.</p>
+   <p>Que tenemos grupos culturales y deportivos como el coro polif&oacute;rico, de teatro, tabla gimn&aacute;stica, grupos ambientalistas .</p>
+
+        </div><!--fin del contenido-->
+
+        </div><!--fin subtitulo-->
+        <div id="menu_lateral">
+        <div id="foto" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
+               <img id="imagen" src="../img/Lab01.jpg" alt="" width="100%" height="100"/>
+            </div>
+                <h2>Debes conocer...</h2>
+            <form action="archivo.php" method="post">
+            <input type="button" id="0" value="Nuestra Misi&oacute;n" onclick="mostrarTexto(this.id)"></input>
+            <input type="button" id="1" value="Nuestra Visi&oacute;n" onclick="mostrarTexto(this.id)"></input>
+            <input type="button" id="2" value="Nuestros Valores" onclick="mostrarTexto(this.id)"></input>
+            </form>
+            <div id="muestra">  </div>
+            <div id="reloj"></div> <!-- Aquí se mostrará el reloj -->
+         </div><!--fin del menu_lateral-->
+    </div><!--fin content-fondo-->
+
+  <div id="abajo" onclick="cambiarTextoPie()">
+    <p id="pieTexto"><strong>Nelson De Gracia</strong></p>
+  </div><!--fin del footer-->
+</div><!--fin del fondo-->
+<script>
+// Función para cambiar el color del pie de página cada 10 segundos
+function cambiarColorPie() {
+    var pieTexto = document.getElementById("pieTexto");
+    var color = pieTexto.style.color;
+    switch(color) {
+        case "":
+        case "black":
+            pieTexto.style.color = "black";
+            break;
+        case "red":
+            pieTexto.style.color = "green";
+            break;
+        case "green":
+            pieTexto.style.color = "blue";
+            break;
+    }
+}
+
+// Llamar a la función cambiarColorPie cada 10 segundos
+setInterval(cambiarColorPie, 3000);
+</script>
+</body>
+</html>
